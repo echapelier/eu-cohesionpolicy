@@ -48,6 +48,8 @@ ordre_themeprojet = ['Indéterminé', 'Insertion', 'Emploi', 'Formation', 'Subve
 ordre_catbeneficiaires = ['Associations', 'Autres établissements publics', "Chambres consulaires et groupements d'entreprises", 'Communes', 'Départements', 'Entreprises', 'Formation continue et enseignement hors supérieur', 'État', 'Logement social', 'Missions locales emploi et insertion', "Organismes de soutien à l'entrepreneuriat", 'Régions', "Établissements de recherche et d'enseignement supérieur", 'Bénéficiaires de type indéterminé']
 data_pivot = data_pivot.reindex(index=ordre_themeprojet, columns=ordre_catbeneficiaires, copy=False)
 
+couleurs_catbeneficiaires = ['#aa8f00', 'LightSteelBlue', '#802200', '#3455db', '#0000e0', '#ff4500', '#b659ac', '#000060', '#28a228', '#af851a', '#553529', '#00008b',  '#9370db', '#939393']
+
 partie1_md = '''
     ## 1. Introduction
 
@@ -67,7 +69,7 @@ partie1_md = '''
 partie2_md_a = '''
     La distribution des opérations en fonction des montants d’aides européennes reçues fait apparaître deux catégories de projets :
 
-    - d’une part des projets **« courants »**, qui représentent 90 % des opérations FEDER et FSE et représentent 30 % des montants programmés ; 
+    - d’une part des projets **« courants »**, qui représentent 90 % du nombre des opérations FEDER et FSE et 30 % des montants programmés ; 
     - d’autre part des projets **« d’ampleur »**, beaucoup moins nombreux (10 % des opérations) mais qui absorbent la grande majorité des ressources (70 % des fonds FEDER et FSE).
 '''
 
@@ -78,7 +80,7 @@ partie2_md_b = '''
 partie3_md = '''
     ## 3. Vue d’ensemble des bénéficiaires
     
-    Alors que les opérations FSE se concentrent sur trois thématiques (emploi, formation et inclusion) et associent des catégories variées de porteurs de projet, le FEDER cible des domaines plus nombreux mais bénéficie d’abord aux collectivités territoriales et aux établissements publics.
+    **Alors que les opérations FSE se concentrent sur trois thématiques (emploi, formation et inclusion) et associent des catégories variées de porteurs de projet, le FEDER cible des domaines plus nombreux mais bénéficie d’abord aux collectivités territoriales et aux établissements publics.**
 
     Les opérations cofinancées par le FSE dans les domaines de l’emploi et de l’insertion font intervenir une gamme diversifiée d’acteurs : établissements publics, associations, départements, missions emploi et insertion, État et régions. Elles se distinguent du domaine de la formation où 90 % des montants sont mobilisés par les régions, l’État ainsi que les établissements d'enseignement et organismes de formation.
 
@@ -102,7 +104,7 @@ partie5_md = '''
 
     Le financement de la formation apparaît comme une priorité centrale des régions et de l’État, principales autorités de gestion des programmes opérationnels. Les régions mettent ainsi très largement en œuvre les opérations FSE dans ce domaine, essentiellement au titre des mesures liées à l'apprentissage tout au long de la vie prévues par les programmes opérationnels régionaux.
 
-    Parmi les opérations conduites par l’État, sont présentes les mesures liées à l’emploi et à la formation financées dans le cadre du programme opérationnel national « Initiative pour l’Emploi des Jeunes » ainsi que les mesures d’assistance technique liées à la gestion du programme opérationnel national FSE.
+    Parmi les opérations conduites par l’État, sont présentes les mesures liées à l’emploi et à la formation financées dans le cadre du programme opérationnel national « Initiative pour l’emploi des jeunes » ainsi que les mesures d’assistance technique liées à la gestion du programme opérationnel national FSE.
 
     Si les départements et les communes font usage du FSE à des niveaux équivalents pour leurs politiques d’accompagnement à l’emploi et d’inclusion active, c’est sur les investissements en infrastructures que leurs domaines d’intervention se distinguent. Les communes ont en effet largement recours aux cofinancements FEDER en matière de transport urbain, d’infrastructures multimodales et d’environnement tandis que les départements mobilisent davantage ce fonds pour la rénovation thermique des bâtiments et l’aménagement numérique.
 '''
@@ -124,9 +126,13 @@ partie6_md = '''
 
     **Selon qu’elles soient conduites outre-mer ou en métropole, les actions de renforcement de la cohésion économique, sociale et territoriale soutenues par le FEDER et le FSE présentent des différences qui se traduisent notamment par le cofinancement d’acteurs différents.**
 
-    Dans les cinq régions et départements d’outre-mer, régions dites « moins développées », l’État et les établissements publics portent une part significative des cofinancements européens (respectivement 8 et 10 %, contre 0 et 3 % en métropole). Dans le cas de l’État, il s’agit d’une part des mesures d’assistance technique à la gestion des fonds européens, et de l’autre des actions relatives au Service militaire adapté (SMA), un dispositif d’insertion destiné aux jeunes. De leur côté, les établissements publics mettent en œuvre des mesures relatives à l’emploi et à l’inclusion de plus grande ampleur qu’en métropole, ainsi que d’importantes opérations d’aménagement concernant notamment les infrastructures portuaires et le logement.
+    Dans les cinq régions et départements d’outre-mer, régions dites « moins développées » [[1]](#note1), l’État et les établissements publics portent une part significative des cofinancements européens (respectivement 8 et 10 %, contre 0 et 3 % en métropole). Dans le cas de l’État, il s’agit d’une part des mesures d’assistance technique à la gestion des fonds européens, et de l’autre des actions relatives au Service militaire adapté (SMA), un dispositif d’insertion destiné aux jeunes. De leur côté, les établissements publics mettent en œuvre des mesures relatives à l’emploi et à l’inclusion de plus grande ampleur qu’en métropole, ainsi que d’importantes opérations d’aménagement concernant notamment les infrastructures portuaires et le logement.
     
     Les entreprises en outre-mer bénéficient également de davantage de financements européens, en raison de l’existence de mesures de compensation des surcoûts de l’ultrapériphéricité. En revanche, les conseils régionaux et établissements d’enseignement supérieur et de recherche occupent une place moindre que dans les régions métropolitaines dites « en transition » et « plus développées ».
+'''
+
+partie6_md_note = '''
+    [[1]](#renvoi_partie6) En 2014-2020, régions moins développées : Guadeloupe, Guyane, Martinique, Mayotte, La Réunion ; régions en transition : Auvergne, Basse-Normandie, Corse, Franche-Comté, Languedoc-Roussillon, Limousin, Lorraine, Nord-Pas-de-Calais, Picardie, Poitou-Charentes ; régions plus développées : Alsace, Aquitaine, Bourgogne, Bretagne, Centre, Champagne-Ardenne, Haute-Normandie, Île-de-France, Midi-Pyrénées, Pays de la Loire, Provence-Alpes-Côte d’Azur, Rhône-Alpes.
 '''
 
 partie7_md = '''
@@ -134,15 +140,19 @@ partie7_md = '''
 
     Les stratégies de sélection des opérations par les Conseils régionaux, autorités de gestion de la plupart des programmes opérationnels, se sont traduites par un ciblage des investissements qui a pu bénéficier à certaines catégories de bénéficiaires.
 
-    Ainsi, deux régions se distinguent par une concentration relativement élevée des fonds : l’Île-de-France, où le Conseil régional reçoit près de la moitié des cofinancements et notamment pour la mise en place d’instruments financiers, et la Bretagne, où les établissements de recherche et d’enseignement supérieur portent une large part (47 %) des projets « courants » tandis que le FSE y a été mis en œuvre par des contrats de formation professionnelle de grande ampleur.
+    Ainsi, deux régions [[2]](#note2) se distinguent par une concentration relativement élevée des fonds : l’Île-de-France, où le Conseil régional reçoit près de la moitié des cofinancements et notamment pour la mise en place d’instruments financiers, et la Bretagne, où les établissements de recherche et d’enseignement supérieur portent une large part (47 %) des projets « courants » tandis que le FSE y a été mis en œuvre par des contrats de formation professionnelle de grande ampleur.
 
     Ce schéma se retrouve pour les régions présentant une concentration plutôt élevée des fonds, due soit aux opérations effectuées par le Conseil régional (Alsace, Haute-Normandie, Limousin, Picardie, Provence-Alpes-Côte d’Azur), soit à la présence plus forte d’une certaine catégorie de porteurs de projets « courants » (le secteur communal en Corse, les entreprises en Martinique).
+'''
+
+partie7_md_note = '''
+    [[2]](#renvoi_partie7) L’organisation territoriale retenue est celle en vigueur lors de la définition des programmes opérationnels 2014-2020, soit avant la Loi n° 2015-29 du 16 janvier 2015 relative à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral. La mesure de la concentration utilise l’indice de Herfindahl-Hirschman appliqué à 13 catégories de bénéficiaires et n’inclut pas les programmes opérationnels nationaux et interrégionaux.
 '''
 
 partie8_md = '''
     ## 8. Les opérations de très grande envergure
 
-    Hors instruments financiers, une centaine d’opérations présentent une contribution européenne supérieure à 10 millions d’euros. Elles représentent 0,3 % des opérations mais 19,4 % des contributions FEDER et FSE.
+    **Hors instruments financiers, une centaine d’opérations présentent une contribution européenne supérieure à 10 millions d’euros. Elles représentent 0,3 % des opérations mais 19,4 % des contributions FEDER et FSE.**
 
     Sont concernés en premier lieu les contrats de formation professionnelle portés par les Conseils régionaux et, dans une moindre mesure, certains organismes de formation et d’accompagnement des jeunes. Viennent ensuite les opérations relatives à l’emploi avec la mise en place de la Garantie Jeunes, les dispositifs d’accompagnement de Pôle Emploi et les aides à la mobilité.
     
@@ -162,17 +172,31 @@ partie10_md = '''
 
     **La réalisation des opérations a connu une montée en puissance progressive avec un pic des contributions européennes à la mi-parcours, c’est-à-dire fin 2017.**
 
-    Cependant, les opérations FEDER et FSE ont suivi deux tendances distinctes : après une brusque augmentation des contributions européennes en 2015, le FSE a conservé de 2016 à 2019 un rythme stable de réalisation des opérations ; la réalisation des opérations FEDER a quant à elle connu une croissance sensible et régulière jusqu’en 2017, avant de se stabiliser en 2018 et 2019. Plus de la moitié (55 %) des opérations FEDER et FSE ont démarré avant la fin 2016 et 89 % avant la fin 2018, avec un pic de mise en œuvre en 2017. Ce pic a été suivi d’un rapide recul de la mise en œuvre des opérations de courte durée, en majorité cofinancées par le FSE (dès 2016 pour les opérations de moins de 24 mois et à partir de 2017 pour les opérations de moins de 12 mois).
+    Cependant, les opérations FEDER et FSE ont suivi deux tendances distinctes : après une brusque augmentation des contributions européennes en 2015, le FSE a conservé de 2016 à 2019 un rythme stable de réalisation des opérations [[3]](#note3) ; la réalisation des opérations FEDER a quant à elle connu une croissance sensible et régulière jusqu’en 2017, avant de se stabiliser en 2018 et 2019.
+    
+    Plus de la moitié (55 %) des opérations FEDER et FSE ont démarré avant la fin 2016 et 89 % avant la fin 2018, avec un pic de mise en œuvre en 2017. Ce pic a été suivi d’un rapide recul de la mise en œuvre des opérations de courte durée, en majorité cofinancées par le FSE (dès 2016 pour les opérations de moins de 24 mois et à partir de 2017 pour les opérations de moins de 12 mois).
+'''
+
+partie10_md_note = '''
+    [[3]](#renvoi_partie10) La mise en œuvre des opérations FEDER et FSE s’appuie ici sur les montants de financement programmés et les dates de début et de fin de réalisation des opérations. Elle n’intègre donc pas les variations relatives aux dates de programmation des opérations ainsi qu’aux dates et montants de paiement effectif.
 '''
 
 partie11_md = '''
-    ## 11. Note méthodologique
+    ## 11. Perspectives
 
-    L’analyse repose sur les données relatives à 38 532 opérations menées dans le cadre de 38 Programmes opérationnels FEDER, FSE et IEJ 2014-2020. Elles ont été extraites le 01/12/2020 et sont issues des listes d’opérations programmées publiées au 29/07/2020 par l’Agence nationale de la cohésion des territoires (16 411 opérations), au 01/12/2020 par la Région Nouvelle-Aquitaine (2 292 opérations), au 06/07/2020 par la Région Normandie (864 opérations), au 30/06/2020 par la Région Bretagne (529 opérations) et au 30/07/2020 par la Délégation générale à l’emploi et à la formation professionnelle (18 436 opérations). Ne sont donc pas incluses les opérations cofinancées au titre des programmes de coopération territoriale européenne (INTERREG). Les montants considérés représentent 83,2 % des fonds FEDER et FSE-IEJ alloués à la France pour 2014-2020, la période de programmation n’étant pas clôturée à la date de l’analyse et les jeux de données publiés d’ayant donc pas un caractère définitif.
+    L’approche agrégée des bénéficiaires et allocations du FEDER et du FSE suggère que la mobilisation des fonds européens en France donne lieu à deux réalités. D’une part, une très large majorité d’opérations ayant recours à des instruments d’une relative complexité mais représentant moins d’un tiers des ressources engagées. D’autre part des opérations de grande échelle où les acteurs publics jouent un rôle prépondérant. Cette double réalité interroge plusieurs dimensions de la mise en œuvre des fonds européens :
+
+    - **Identification claire des bénéficiaires** – l’évaluation des programmes européens, instruments de politique socioéconomique, pourrait être enrichie d’une analyse approfondie des catégories de bénéficiaires directs et indirects des financements, essentielle à l’appréhension de la pertinence, cohérence, effectivité, efficacité et efficience de l’action publique ;
+
+    - **Distribution des montants et distribution du risque d’erreur** – les débats sur la simplification des fonds européens pourraient davantage intégrer la question de la distribution du risque de manquement à la légalité et à la régularité de l’utilisation des fonds, en fonction des types d’opérations et des montants engagés, permettant ainsi de développer des procédures d’attribution, de gestion et de contrôle basées sur l’estimation quantifiée de ce risque ;
+
+    - **Valeur ajoutée européenne** – la prise en compte systématique des domaines d’intervention tels que définis par l’Annexe I du Règlement portant dispositions communes permettrait de mieux rendre compte de la relation entre types d’opérations cofinancées, performance des programmes et impact socioéconomique des fonds européens.
 '''
 
-apropos_md = '''
-    ## À propos
+partie12_md = '''
+    ## 12. Note méthodologique
+
+    L’analyse repose sur les données relatives à 38 532 opérations menées dans le cadre de 38 Programmes opérationnels FEDER, FSE et IEJ 2014-2020. Elles ont été extraites le 01/12/2020 et sont issues des listes d’opérations programmées publiées au 29/07/2020 par l’Agence nationale de la cohésion des territoires (16 411 opérations), au 01/12/2020 par la Région Nouvelle-Aquitaine (2 292 opérations), au 06/07/2020 par la Région Normandie (864 opérations), au 30/06/2020 par la Région Bretagne (529 opérations) et au 30/07/2020 par la Délégation générale à l’emploi et à la formation professionnelle (18 436 opérations). Ne sont donc pas incluses les opérations cofinancées au titre des programmes de coopération territoriale européenne (INTERREG). Les montants considérés représentent 83,2 % des fonds FEDER et FSE-IEJ alloués à la France pour 2014-2020, la période de programmation n’étant pas clôturée à la date de l’analyse et les jeux de données publiés d’ayant donc pas un caractère définitif.
 
     Auteurs : [Elie HERBERICHS](mailto:eherberichs@novi-advisory.eu) et [Romain SU](https://romain.su) 
 '''
@@ -188,8 +212,8 @@ montants_feder_normalises = (montants_feder - montants_feder.min()) / (montants_
 montants_fse_normalises = (montants_fse - montants_fse.min()) / (montants_fse.max() - montants_fse.min()) 
 
 fig1 = go.Figure()
-fig1.add_trace(go.Scatter(x=feder_normalises, y=montants_feder_normalises, name='FEDER', hoverinfo='none'))
-fig1.add_trace(go.Scatter(x=fse_normalises, y=montants_fse_normalises, name='FSE', hoverinfo='none'))
+fig1.add_trace(go.Scatter(x=feder_normalises, y=montants_feder_normalises, name='FEDER', hoverinfo='none', line=dict(color="#0f4f75")))
+fig1.add_trace(go.Scatter(x=fse_normalises, y=montants_fse_normalises, name='FSE', hoverinfo='none', line=dict(color="#00b1f3")))
 fig1.update_layout(xaxis = dict(
                                 title_text = "Nombre d'opérations",
                                 tickmode = 'array',
@@ -226,15 +250,17 @@ fig2 = go.Figure(layout = dict(
                                autosize = True
                                ))
 
-for catbeneficiaire in data_pivot_sansindetermine.columns:
+for i, catbeneficiaire in enumerate(data_pivot_sansindetermine.columns):
     fig2.add_trace(go.Barpolar(r=data_pivot_sansindetermine[catbeneficiaire],
                                name=catbeneficiaire,
                                hoverinfo="text",
-                               hovertext=catbeneficiaire
+                               hovertext=catbeneficiaire,
+                               marker_color=couleurs_catbeneficiaires[i]
                               )
                   )
 
-fig2.update_layout(legend=dict(orientation="h", font=dict(size=12)), font=graph_fontstyle)
+fig2.update_layout(margin = dict(l=0, r=0, t=50, b=0),
+                   legend = dict(orientation="h", x=0.15, yanchor='bottom', y=-0.8, font=dict(size=12)), font=graph_fontstyle)
 
 data_sansindetermine = data[data['catbeneficiaire'] != 'Bénéficiaires de type indéterminé']
 data_feder_p1 = data_sansindetermine.loc[(data_sansindetermine['Fonds'] == 'FEDER') & (data_sansindetermine['Palier'] == 'P1'), 'catbeneficiaire'].value_counts(normalize=True, dropna=False).sort_index()
@@ -243,8 +269,8 @@ data_fse_p1 = data_sansindetermine.loc[(data_sansindetermine['Fonds'] == 'FSE') 
 data_fse_p2 = data_sansindetermine.loc[(data_sansindetermine['Fonds'] == 'FSE') & (data_sansindetermine['Palier'] == 'P2'), 'catbeneficiaire'].value_counts(normalize=True, dropna=False).sort_index()
 
 fig4a = go.Figure(data=[
-    go.Bar(name='Nombre de projets « courants »', orientation='h', x=data_feder_p1, y=data_feder_p1.index, hoverinfo='none'),
-    go.Bar(name='Nombre de projets « d’ampleur »', orientation='h', x=data_feder_p2, y=data_feder_p2.index, hoverinfo='none')
+    go.Bar(name='Proportion des projets « courants »', orientation='h', x=data_feder_p1, y=data_feder_p1.index, hoverinfo='none', marker_color="#0f4f75"),
+    go.Bar(name='Proportion des projets « d’ampleur »', orientation='h', x=data_feder_p2, y=data_feder_p2.index, hoverinfo='none', marker_color="#00b1f3")
 ])
 fig4a.update_layout(barmode='stack',
                     xaxis=dict(tickformat='%'),
@@ -253,8 +279,8 @@ fig4a.update_layout(barmode='stack',
                     dragmode=False)
 
 fig4b = go.Figure(data=[
-    go.Bar(name='Nombre de projets « courants »', orientation='h', x=data_fse_p1, y=data_fse_p1.index, hoverinfo='none'),
-    go.Bar(name='Nombre de projets « d’ampleur »', orientation='h', x=data_fse_p2, y=data_fse_p2.index, hoverinfo='none')
+    go.Bar(name='Proportion des projets « courants »', orientation='h', x=data_fse_p1, y=data_fse_p1.index, hoverinfo='none', marker_color="#0f4f75"),
+    go.Bar(name='Proportion des projets « d’ampleur »', orientation='h', x=data_fse_p2, y=data_fse_p2.index, hoverinfo='none', marker_color="#00b1f3")
 ])
 fig4b.update_layout(barmode = 'stack',
                     xaxis = dict(tickformat='%'),
@@ -302,18 +328,22 @@ types_invest_entreprises = ['Investissements génériques des PME', 'Biomasse-é
 montants__invest_entreprises = [243913249, 94734269, 30897102, 28215965, 156987272]
 fig5_entreprises = go.Figure(data=[go.Pie(labels=types_invest_entreprises, values=montants__invest_entreprises, hole=0.6, hoverinfo = "none")])
 fig5_entreprises.update_traces(texttemplate='%{percent:.0%f}')
-fig5_entreprises.update_layout(margin=dict(l=0, r=0, t=20, b=20),
-                               legend=dict(itemclick=False, itemdoubleclick=False, yanchor='middle', y=0.5))
+fig5_entreprises.update_layout(title_text='Répartition des cofinancements FEDER pour l’investissement des entreprises',
+                               margin=dict(l=0, r=0, t=20, b=60),
+                               legend=dict(itemclick=False, itemdoubleclick=False, yanchor='middle', y=0.5),
+                               title_font_size=12,
+                               title_y=0.1
+                               )
 
 fig6 = go.Figure()
-fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[21, 30, 28], name='Régions', orientation='h', hoverinfo = "none"))
-fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[6, 4, 5], name='Départements', orientation='h', hoverinfo = "none"))
-fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[15, 17, 12], name='Communes', orientation='h', hoverinfo = "none"))
-fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[8, 0, 0], name='État', orientation='h', hoverinfo = "none"))
-fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[3, 14, 12], name='Recherche et enseignement supérieur', orientation='h', hoverinfo = "none"))
-fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[13, 8, 10], name='Entreprises', orientation='h', hoverinfo = "none"))
-fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[10, 3, 3], name='Autres établissements publics', orientation='h', hoverinfo = "none"))
-fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[24, 24, 30], name='Autres', orientation='h', hoverinfo = "none"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[21, 30, 28], name='Régions', orientation='h', hoverinfo = "none", marker_color="#00008b"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[6, 4, 5], name='Départements', orientation='h', hoverinfo = "none", marker_color="#0000e0"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[15, 17, 12], name='Communes', orientation='h', hoverinfo = "none", marker_color="#3455db"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[8, 0, 0], name='État', orientation='h', hoverinfo = "none", marker_color="#ff4500"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[3, 14, 12], name='Recherche et enseignement supérieur', orientation='h', hoverinfo = "none", marker_color="#9370db"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[13, 8, 10], name='Entreprises', orientation='h', hoverinfo = "none", marker_color="#b8860b"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[10, 3, 3], name='Autres établissements publics', orientation='h', hoverinfo = "none", marker_color='LightSteelBlue'))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[24, 24, 30], name='Autres', orientation='h', hoverinfo = "none", marker_color="#939393"))
 fig6.update_layout(barmode='stack',
                    xaxis = dict(ticksuffix=' %'),
                    margin=dict(t=20, b=20),
@@ -324,11 +354,13 @@ fig8 = go.Figure(data=[go.Scatter(
     x = (contributions_10m['Montant UE programmé'].sum() / contributions_10m['Montant UE programmé'].count()),
     y = contributions_10m['Montant UE programmé'].count(),
     text = list(contributions_10m.indices.keys()),
-    marker_size = contributions_10m['Total des dépenses éligibles'].sum()
+    marker_size = contributions_10m['Total des dépenses éligibles'].sum(),
+    marker_color = ['#aa8f00', '#28a228', '#b659ac', '#2e343b', '#0000e0', '#00a4a6', '#726012', '#9370db', '#e73c4e', '#ff4500']
 )])
 sizeref = 2.*max(contributions_10m['Total des dépenses éligibles'].sum())/(100**2)
-fig8.update_traces(mode='markers', marker=dict(sizemode='area',
-                                               sizeref=sizeref, line_width=2))
+fig8.update_traces(mode='markers',
+                   marker=dict(sizemode='area', sizeref=sizeref, line_width=2),
+                   hoverinfo='text')
 fig8.update_layout(margin=dict(t=20, b=20),
                    xaxis=dict(title='Contribution UE par opération'),
                    yaxis=dict(title='Nombre d’opérations'))
@@ -336,8 +368,20 @@ fig8.update_layout(margin=dict(t=20, b=20),
 inst_financiers = data.loc[data['Instrument financier ?'] == True, ["Catégorie d'instrument financier", 'Montant UE programmé']].groupby(by="Catégorie d'instrument financier").sum()
 fig9 = go.Figure(data=[go.Pie(labels=inst_financiers.index, values=inst_financiers['Montant UE programmé'], hole=0.6, hoverinfo = "none")])
 fig9.update_traces(texttemplate='%{percent:.0%f}')
-fig9.update_layout(margin=dict(t=20),
+fig9.update_layout(title_text="Allocations aux différentes catégories d’instruments financiers",
+                   title_font_size=12,
+                   title_y=0.05,
+                   margin=dict(t=20),
                    legend=dict(orientation="h", itemclick=False, itemdoubleclick=False, yanchor="bottom"))
+
+data_montants_mois = pd.read_csv('data_montants_mois.csv')
+
+fig10a = go.Figure()
+fig10a.add_trace(go.Scatter(x=data_montants_mois.iloc[:,0], y=(data_montants_mois['FEDER_normalise'] * 100), mode='lines', name='FEDER', hoverinfo='none', line=dict(color="#0f4f75")))
+fig10a.add_trace(go.Scatter(x=data_montants_mois.iloc[:,0], y=(data_montants_mois['FSE_normalise'] * 100), mode='lines', name='FSE', hoverinfo='none', line=dict(color="#00b1f3")))
+fig10a.update_layout(yaxis = dict(ticksuffix=' %'),
+                     margin=dict(t=10, b=0),
+                     legend=dict(xanchor="right", x=1, yanchor="bottom", y=0))
 
 categories_duree = ["moins d'un an", "entre un et deux ans", "entre deux et trois ans", "plus de trois ans"]
 palette_bleus = ['blue', 'cornflowerblue', 'SkyBlue', 'LightSteelBlue']
@@ -352,8 +396,7 @@ fig10c = go.Figure(go.Treemap(
     hoverinfo = "none",
     marker_colors = palette_bleus
     ),
-                 layout=dict(font=graph_fontstyle),
-    
+                 layout=dict(font=graph_fontstyle, margin=dict(l=0, r=0, t=20, b=20))
     )
 
 fig10d = go.Figure(go.Treemap(
@@ -366,8 +409,7 @@ fig10d = go.Figure(go.Treemap(
     hoverinfo = "none",
     marker_colors = palette_bleus
     ),
-                 layout=dict(font=graph_fontstyle),
-    
+                 layout=dict(font=graph_fontstyle, margin=dict(l=0, r=0, t=20, b=20))
     )
 
 app.layout = html.Div(children=[
@@ -399,7 +441,7 @@ app.layout = html.Div(children=[
             id='apport_beneficiaires_thematiques',
             figure=fig2,
             config={'displayModeBar': False},
-            style={'width':'100%', 'height':'100vh'}
+            style={'width':'100%'}
         )
     ]),
 
@@ -448,14 +490,14 @@ app.layout = html.Div(children=[
                             id='focus_entreprises',
                             figure=fig5_entreprises,
                             config={'displayModeBar': False},
-                            style={'height':200}
+                            style={'height':280}
                 )       
         ], className="seven columns")
     ], className="row"),
 
     html.Div([
         dcc.Markdown(children=partie6_md)
-    ], className="paragraph"),
+    ], id="renvoi_partie6", className="paragraph"),
 
     html.Figure([
         html.Figcaption('Bénéficiaires FEDER et FSE par catégorie de région'),
@@ -466,15 +508,61 @@ app.layout = html.Div(children=[
     ]),
 
     html.Div([
+        dcc.Markdown(children=partie6_md_note)
+    ], id="note1", className="paragraph"),
+
+    html.Div([
         dcc.Markdown(children=partie7_md)
-    ], className="paragraph"),
+    ], id="renvoi_partie7", className="paragraph"),
+
+    html.Div([
+        html.Div([
+            html.Table([
+                html.Thead([
+                    html.Tr([
+                        html.Th('Indice de concentration IHH par région (pré-NOTRe)', colSpan=2, style={'text-align':'center'})
+                    ])
+                ]),
+                html.Tbody([
+                    html.Tr([
+                        html.Td('1000-1500', style={'background-color':'#D3ECFD', 'text-align':'center', 'font-weight':'bold'}),
+                        html.Td('Faible')
+                    ]),
+                    html.Tr([
+                        html.Td('1500-2000', style={'background-color':'#B9E6FF', 'text-align':'center', 'font-weight':'bold'}),
+                        html.Td('Plutôt faible')
+                    ]),
+                    html.Tr([
+                        html.Td('2000-2500', style={'background-color':'#A29FFF', 'text-align':'center', 'font-weight':'bold'}),
+                        html.Td('Plutôt élevé')
+                    ]),
+                    html.Tr([
+                        html.Td('2500-3000', style={'background-color':'#A09FD2', 'text-align':'center', 'font-weight':'bold'}),
+                        html.Td('Élevé')
+                    ])
+                ])
+            ], style={'width':"100%"})
+        ], className="four columns"),
+        html.Div([
+            html.Iframe(
+            src="https://umap.openstreetmap.fr/fr/map/indice-conc-reg_556875#5/46.324/1.956",
+            height='400px',
+            width="100%"
+        )
+        ], className="eight columns")
+    ], className="row"),
+
+    html.Div([
+        dcc.Markdown(children=partie7_md_note)
+    ], id="note2", className="paragraph"),
 
     html.Div([
         dcc.Markdown(children=partie8_md)
     ], className="paragraph"),
 
-    html.Figure([
-        html.Figcaption('Contributions FEDER supérieures à 10 millions d’euros, hors instruments financiers'),
+    html.Figure(
+        children=[
+        html.Figcaption(['Contributions FEDER et FSE supérieures à 10 millions d’euros, hors instruments financiers', html.Br(), '(surface = total des contributions UE)']),
         dcc.Graph(
             id='contributions_10m',
             figure=fig8,
@@ -494,26 +582,44 @@ app.layout = html.Div(children=[
 
     html.Div([
         dcc.Markdown(children=partie10_md)
-    ], className="paragraph"),
+    ], id="renvoi_partie10", className="paragraph"),
 
     html.Figure([
-        html.Figcaption('Distribution des projets en fonction de la durée des opérations'),
+        html.Figcaption('Mise en œuvre des opérations mesurée par montants programmés de fonds européens'),
         dcc.Graph(
-            id='distribution_durees_fse',
-            figure=fig10c,
-            config={'displayModeBar': False}),
-        dcc.Graph(
-            id='distribution_durees_feder',
-            figure=fig10d,
-            config={'displayModeBar': False}),
+            id='montants_op_mois',
+            figure=fig10a,
+            config={'displayModeBar': False}
+        )
     ]),
+
+    html.Div([
+#        html.Figure([
+#            html.Figcaption('Distribution des projets en fonction de la durée des opérations'),
+            html.Div([
+                dcc.Graph(
+                    id='distribution_durees_feder',
+                    figure=fig10d,
+                    config={'displayModeBar': False})
+            ], className="one-half column"),
+            html.Div([
+                dcc.Graph(
+                    id='distribution_durees_fse',
+                    figure=fig10c,
+                    config={'displayModeBar': False})
+            ], className="one-half column")
+    ], className="row"),
+
+    html.Div([
+        dcc.Markdown(children=partie10_md_note)
+    ], id="note3", className="paragraph"),
 
     html.Div([
         dcc.Markdown(children=partie11_md)
     ], className="paragraph"),
 
     html.Div([
-        dcc.Markdown(children=apropos_md)
+        dcc.Markdown(children=partie12_md)
     ], className="paragraph"),
 
 ],
