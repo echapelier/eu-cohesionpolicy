@@ -67,12 +67,12 @@ partie1_md = '''
 partie2_md_a = '''
     La distribution des opérations en fonction des montants d’aides européennes reçues fait apparaître deux catégories de projets :
 
-    - d’une part des projets **« courants »**, qui représentent 90% des opérations FEDER et FSE et représentent 30% des montants programmés ; 
-    - d’autre part des projets **« d’ampleur »**, beaucoup moins nombreux (10% des opérations) mais qui absorbent la grande majorité des ressources (70% des fonds FEDER et FSE).
+    - d’une part des projets **« courants »**, qui représentent 90 % des opérations FEDER et FSE et représentent 30 % des montants programmés ; 
+    - d’autre part des projets **« d’ampleur »**, beaucoup moins nombreux (10 % des opérations) mais qui absorbent la grande majorité des ressources (70 % des fonds FEDER et FSE).
 '''
 
 partie2_md_b = '''
-    Dans le cas du FSE, le seuil d’entrée dans la catégorie des projets « d’ampleur » (séparant les neuvième et dixième déciles) se situe à 326 000 euros tandis qu’il se situe à 700 000 euros pour le FEDER. En effet, les opérations FSE, qui sont liées à l’emploi, la formation et l’inclusion, tendent à être plus courtes (64% des projets durent moins d’un an) et affichent un coût total moyen de 447 000 euros ainsi qu’un niveau de cofinancement européen de 53%. En revanche, les opérations FEDER, généralement liées aux infrastructures et équipements, ont des durées plus longues (54% des projets durent deux à trois ans) et un coût plus élevé (960 000 euros en moyenne) tout en présentant un taux de cofinancement plus faible (40% en moyenne).
+    Dans le cas du FSE, le seuil d’entrée dans la catégorie des projets « d’ampleur » (séparant les neuvième et dixième déciles) se situe à 326 000 euros tandis qu’il se situe à 700 000 euros pour le FEDER. En effet, les opérations FSE, qui sont liées à l’emploi, la formation et l’inclusion, tendent à être plus courtes (64 % des projets durent moins d’un an) et affichent un coût total moyen de 447 000 euros ainsi qu’un niveau de cofinancement européen de 53 %. En revanche, les opérations FEDER, généralement liées aux infrastructures et équipements, ont des durées plus longues (54 % des projets durent deux à trois ans) et un coût plus élevé (960 000 euros en moyenne) tout en présentant un taux de cofinancement plus faible (40 % en moyenne).
 '''
 
 partie3_md = '''
@@ -80,9 +80,9 @@ partie3_md = '''
     
     Alors que les opérations FSE se concentrent sur trois thématiques (emploi, formation et inclusion) et associent des catégories variées de porteurs de projet, le FEDER cible des domaines plus nombreux mais bénéficie d’abord aux collectivités territoriales et aux établissements publics.
 
-    Les opérations cofinancées par le FSE dans les domaines de l’emploi et de l’insertion font intervenir une gamme diversifiée d’acteurs : établissements publics, associations, départements, missions emploi et insertion, État et régions. Elles se distinguent du domaine de la formation où 90% des montants sont mobilisés par les régions, l’État ainsi que les établissements d'enseignement et organismes de formation.
+    Les opérations cofinancées par le FSE dans les domaines de l’emploi et de l’insertion font intervenir une gamme diversifiée d’acteurs : établissements publics, associations, départements, missions emploi et insertion, État et régions. Elles se distinguent du domaine de la formation où 90 % des montants sont mobilisés par les régions, l’État ainsi que les établissements d'enseignement et organismes de formation.
 
-    Concernant le FEDER, 74% des cofinancements viennent soutenir les actions des collectivités territoriales (régions, départements et secteur communal) ainsi que celles des établissements publics, y compris les établissements de recherche et d’enseignement supérieur.
+    Concernant le FEDER, 74 % des cofinancements viennent soutenir les actions des collectivités territoriales (régions, départements et secteur communal) ainsi que celles des établissements publics, y compris les établissements de recherche et d’enseignement supérieur.
 '''
 
 partie4_md = '''
@@ -98,7 +98,7 @@ partie4_md = '''
 partie5_md = '''
     ## 5. État et collectivités territoriales : des actions complémentaires ?
 
-    **La nature des interventions des collectivités territoriales et de l’État, qui représentant 41% des montants programmés, suggère une complémentarité entre leurs actions. Cette complémentarité est d’ordre géographique pour les actions de formation mobilisant le FSE, entre mise en œuvre nationale, régionale ou infrarégionale, et thématique dans le cadre du FEDER.**
+    **La nature des interventions des collectivités territoriales et de l’État, qui représentant 41 % des montants programmés, suggère une complémentarité entre leurs actions. Cette complémentarité est d’ordre géographique pour les actions de formation mobilisant le FSE, entre mise en œuvre nationale, régionale ou infrarégionale, et thématique dans le cadre du FEDER.**
 
     Le financement de la formation apparaît comme une priorité centrale des régions et de l’État, principales autorités de gestion des programmes opérationnels. Les régions mettent ainsi très largement en œuvre les opérations FSE dans ce domaine, essentiellement au titre des mesures liées à l'apprentissage tout au long de la vie prévues par les programmes opérationnels régionaux.
 
@@ -116,7 +116,7 @@ partie5_md_focus_assos = '''
 partie5_md_focus_entreprises = '''
     ### Focus : le soutien à l’investissement des entreprises
 
-    Tous axes programmatiques confondus, le soutien à l’investissement des entreprises, qui représente 11% des cofinancements FEDER hors instruments financiers, porte majoritairement sur les investissements génériques des PME (outil de production, bâtiments, et dans une moindre mesure adaptation des processus de production) et la production de biomasse-énergie (unités de méthanisation, chaufferies bois).
+    Tous axes programmatiques confondus, le soutien à l’investissement des entreprises, qui représente 11 % des cofinancements FEDER hors instruments financiers, porte majoritairement sur les investissements génériques des PME (outil de production, bâtiments, et dans une moindre mesure adaptation des processus de production) et la production de biomasse-énergie (unités de méthanisation, chaufferies bois).
 '''
 
 partie6_md = '''
@@ -124,7 +124,7 @@ partie6_md = '''
 
     **Selon qu’elles soient conduites outre-mer ou en métropole, les actions de renforcement de la cohésion économique, sociale et territoriale soutenues par le FEDER et le FSE présentent des différences qui se traduisent notamment par le cofinancement d’acteurs différents.**
 
-    Dans les cinq régions et départements d’outre-mer, régions dites « moins développées », l’État et les établissements publics portent une part significative des cofinancements européens (respectivement 8 et 10%, contre 0 et 3% en métropole). Dans le cas de l’État, il s’agit d’une part des mesures d’assistance technique à la gestion des fonds européens, et de l’autre des actions relatives au Service militaire adapté (SMA), un dispositif d’insertion destiné aux jeunes. De leur côté, les établissements publics mettent en œuvre des mesures relatives à l’emploi et à l’inclusion de plus grande ampleur qu’en métropole, ainsi que d’importantes opérations d’aménagement concernant notamment les infrastructures portuaires et le logement.
+    Dans les cinq régions et départements d’outre-mer, régions dites « moins développées », l’État et les établissements publics portent une part significative des cofinancements européens (respectivement 8 et 10 %, contre 0 et 3 % en métropole). Dans le cas de l’État, il s’agit d’une part des mesures d’assistance technique à la gestion des fonds européens, et de l’autre des actions relatives au Service militaire adapté (SMA), un dispositif d’insertion destiné aux jeunes. De leur côté, les établissements publics mettent en œuvre des mesures relatives à l’emploi et à l’inclusion de plus grande ampleur qu’en métropole, ainsi que d’importantes opérations d’aménagement concernant notamment les infrastructures portuaires et le logement.
     
     Les entreprises en outre-mer bénéficient également de davantage de financements européens, en raison de l’existence de mesures de compensation des surcoûts de l’ultrapériphéricité. En revanche, les conseils régionaux et établissements d’enseignement supérieur et de recherche occupent une place moindre que dans les régions métropolitaines dites « en transition » et « plus développées ».
 '''
@@ -134,7 +134,7 @@ partie7_md = '''
 
     Les stratégies de sélection des opérations par les Conseils régionaux, autorités de gestion de la plupart des programmes opérationnels, se sont traduites par un ciblage des investissements qui a pu bénéficier à certaines catégories de bénéficiaires.
 
-    Ainsi, deux régions se distinguent par une concentration relativement élevée des fonds : l’Île-de-France, où le Conseil régional reçoit près de la moitié des cofinancements et notamment pour la mise en place d’instruments financiers, et la Bretagne, où les établissements de recherche et d’enseignement supérieur portent une large part (47%) des projets « courants » tandis que le FSE y a été mis en œuvre par des contrats de formation professionnelle de grande ampleur.
+    Ainsi, deux régions se distinguent par une concentration relativement élevée des fonds : l’Île-de-France, où le Conseil régional reçoit près de la moitié des cofinancements et notamment pour la mise en place d’instruments financiers, et la Bretagne, où les établissements de recherche et d’enseignement supérieur portent une large part (47 %) des projets « courants » tandis que le FSE y a été mis en œuvre par des contrats de formation professionnelle de grande ampleur.
 
     Ce schéma se retrouve pour les régions présentant une concentration plutôt élevée des fonds, due soit aux opérations effectuées par le Conseil régional (Alsace, Haute-Normandie, Limousin, Picardie, Provence-Alpes-Côte d’Azur), soit à la présence plus forte d’une certaine catégorie de porteurs de projets « courants » (le secteur communal en Corse, les entreprises en Martinique).
 '''
@@ -142,7 +142,7 @@ partie7_md = '''
 partie8_md = '''
     ## 8. Les opérations de très grande envergure
 
-    Hors instruments financiers, une centaine d’opérations présentent une contribution européenne supérieure à 10 millions d’euros. Elles représentent 0,3% des opérations mais 19,4% des contributions FEDER et FSE.
+    Hors instruments financiers, une centaine d’opérations présentent une contribution européenne supérieure à 10 millions d’euros. Elles représentent 0,3 % des opérations mais 19,4 % des contributions FEDER et FSE.
 
     Sont concernés en premier lieu les contrats de formation professionnelle portés par les Conseils régionaux et, dans une moindre mesure, certains organismes de formation et d’accompagnement des jeunes. Viennent ensuite les opérations relatives à l’emploi avec la mise en place de la Garantie Jeunes, les dispositifs d’accompagnement de Pôle Emploi et les aides à la mobilité.
     
@@ -154,7 +154,7 @@ partie9_md = '''
 
     **Une partie des financements FEDER ont été alloués à la mise en place d’une soixantaine d’instruments financiers, c’est-à-dire des dispositifs d’aides remboursables représentant un total de plus de 354 millions d’euros.**
 
-    Ces instruments sont principalement à destination des PME, et notamment des entreprises en création et/ou innovantes. Ils comprennent des instruments de participation (intervention en fonds propres et quasi-fonds propres), de prêt et de garantie, ainsi que des dotations à des fonds de fonds permettant d’abonder plusieurs instruments financiers. Ils sont essentiellement gérés par les Conseils régionaux (73%) et BPI France (18%).
+    Ces instruments sont principalement à destination des PME, et notamment des entreprises en création et/ou innovantes. Ils comprennent des instruments de participation (intervention en fonds propres et quasi-fonds propres), de prêt et de garantie, ainsi que des dotations à des fonds de fonds permettant d’abonder plusieurs instruments financiers. Ils sont essentiellement gérés par les Conseils régionaux (73 %) et BPI France (18 %).
 '''
 
 partie10_md = '''
@@ -162,19 +162,19 @@ partie10_md = '''
 
     **La réalisation des opérations a connu une montée en puissance progressive avec un pic des contributions européennes à la mi-parcours, c’est-à-dire fin 2017.**
 
-    Cependant, les opérations FEDER et FSE ont suivi deux tendances distinctes : après une brusque augmentation des contributions européennes en 2015, le FSE a conservé de 2016 à 2019 un rythme stable de réalisation des opérations ; la réalisation des opérations FEDER a quant à elle connu une croissance sensible et régulière jusqu’en 2017, avant de se stabiliser en 2018 et 2019. Plus de la moitié (55%) des opérations FEDER et FSE ont démarré avant la fin 2016 et 89% avant la fin 2018, avec un pic de mise en œuvre en 2017. Ce pic a été suivi d’un rapide recul de la mise en œuvre des opérations de courte durée, en majorité cofinancées par le FSE (dès 2016 pour les opérations de moins de 24 mois et à partir de 2017 pour les opérations de moins de 12 mois).
+    Cependant, les opérations FEDER et FSE ont suivi deux tendances distinctes : après une brusque augmentation des contributions européennes en 2015, le FSE a conservé de 2016 à 2019 un rythme stable de réalisation des opérations ; la réalisation des opérations FEDER a quant à elle connu une croissance sensible et régulière jusqu’en 2017, avant de se stabiliser en 2018 et 2019. Plus de la moitié (55 %) des opérations FEDER et FSE ont démarré avant la fin 2016 et 89 % avant la fin 2018, avec un pic de mise en œuvre en 2017. Ce pic a été suivi d’un rapide recul de la mise en œuvre des opérations de courte durée, en majorité cofinancées par le FSE (dès 2016 pour les opérations de moins de 24 mois et à partir de 2017 pour les opérations de moins de 12 mois).
 '''
 
 partie11_md = '''
     ## 11. Note méthodologique
 
-    L’analyse repose sur les données relatives à 38 532 opérations menées dans le cadre de 38 Programmes opérationnels FEDER, FSE et IEJ 2014-2020. Elles ont été extraites le 01/12/2020 et sont issues des listes d’opérations programmées publiées au 29/07/2020 par l’Agence nationale de la cohésion des territoires (16 411 opérations), au 01/12/2020 par la Région Nouvelle-Aquitaine (2 292 opérations), au 06/07/2020 par la Région Normandie (864 opérations), au 30/06/2020 par la Région Bretagne (529 opérations) et au 30/07/2020 par la Délégation générale à l’emploi et à la formation professionnelle (18 436 opérations). Ne sont donc pas incluses les opérations cofinancées au titre des programmes de coopération territoriale européenne (INTERREG). Les montants considérés représentent 83,2% des fonds FEDER et FSE-IEJ alloués à la France pour 2014-2020, la période de programmation n’étant pas clôturée à la date de l’analyse et les jeux de données publiés d’ayant donc pas un caractère définitif.
+    L’analyse repose sur les données relatives à 38 532 opérations menées dans le cadre de 38 Programmes opérationnels FEDER, FSE et IEJ 2014-2020. Elles ont été extraites le 01/12/2020 et sont issues des listes d’opérations programmées publiées au 29/07/2020 par l’Agence nationale de la cohésion des territoires (16 411 opérations), au 01/12/2020 par la Région Nouvelle-Aquitaine (2 292 opérations), au 06/07/2020 par la Région Normandie (864 opérations), au 30/06/2020 par la Région Bretagne (529 opérations) et au 30/07/2020 par la Délégation générale à l’emploi et à la formation professionnelle (18 436 opérations). Ne sont donc pas incluses les opérations cofinancées au titre des programmes de coopération territoriale européenne (INTERREG). Les montants considérés représentent 83,2 % des fonds FEDER et FSE-IEJ alloués à la France pour 2014-2020, la période de programmation n’étant pas clôturée à la date de l’analyse et les jeux de données publiés d’ayant donc pas un caractère définitif.
 '''
 
 apropos_md = '''
     ## À propos
 
-    Auteurs : [Elie HERBERICHS](eherberichs@novi-advisory.eu) et [Romain SU](https://romain.su) 
+    Auteurs : [Elie HERBERICHS](mailto:eherberichs@novi-advisory.eu) et [Romain SU](https://romain.su) 
 '''
 
 lignes_feder = np.arange(1, data.loc[data['Fonds'] == 'FEDER', 'Montant UE programmé'].count())
@@ -256,11 +256,11 @@ fig4b = go.Figure(data=[
     go.Bar(name='Nombre de projets « courants »', orientation='h', x=data_fse_p1, y=data_fse_p1.index, hoverinfo='none'),
     go.Bar(name='Nombre de projets « d’ampleur »', orientation='h', x=data_fse_p2, y=data_fse_p2.index, hoverinfo='none')
 ])
-fig4b.update_layout(barmode='stack',
-                    xaxis=dict(tickformat='%'),
+fig4b.update_layout(barmode = 'stack',
+                    xaxis = dict(tickformat='%'),
                     margin = dict(l=0, r=0, t=10, b=40),
                     legend = dict(orientation="h", yanchor="bottom", y=-0.2, xanchor="right", x=0.78),
-                    dragmode=False)
+                    dragmode = False)
 
 fig5 = go.Figure(layout = dict(
                                polar = dict(
@@ -269,7 +269,7 @@ fig5 = go.Figure(layout = dict(
                                        showticklabels=True,
                                        # range = [0, 1],
                                        tickvals = [0.25, 0.5, 0.75],
-                                       ticktext = ['25%', '50%', '75%']
+                                       ticktext = ['25 %', '50 %', '75 %']
                                    ),
                                    angularaxis = dict(
                                        tickmode = "array",
@@ -297,6 +297,47 @@ fig5.update_layout(updatemenus=[dict(active=-1, buttons=buttons1, xanchor="left"
                    dragmode=False,
                    font=graph_fontstyle
                   )
+
+types_invest_entreprises = ['Investissements génériques des PME', 'Biomasse-énergie', 'RDI des grandes entreprises', 'Tourisme', 'Autres']
+montants__invest_entreprises = [243913249, 94734269, 30897102, 28215965, 156987272]
+fig5_entreprises = go.Figure(data=[go.Pie(labels=types_invest_entreprises, values=montants__invest_entreprises, hole=0.6, hoverinfo = "none")])
+fig5_entreprises.update_traces(texttemplate='%{percent:.0%f}')
+fig5_entreprises.update_layout(margin=dict(l=0, r=0, t=20, b=20),
+                               legend=dict(itemclick=False, itemdoubleclick=False, yanchor='middle', y=0.5))
+
+fig6 = go.Figure()
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[21, 30, 28], name='Régions', orientation='h', hoverinfo = "none"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[6, 4, 5], name='Départements', orientation='h', hoverinfo = "none"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[15, 17, 12], name='Communes', orientation='h', hoverinfo = "none"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[8, 0, 0], name='État', orientation='h', hoverinfo = "none"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[3, 14, 12], name='Recherche et enseignement supérieur', orientation='h', hoverinfo = "none"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[13, 8, 10], name='Entreprises', orientation='h', hoverinfo = "none"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[10, 3, 3], name='Autres établissements publics', orientation='h', hoverinfo = "none"))
+fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition', 'Régions plus développeées'], x=[24, 24, 30], name='Autres', orientation='h', hoverinfo = "none"))
+fig6.update_layout(barmode='stack',
+                   xaxis = dict(ticksuffix=' %'),
+                   margin=dict(t=20, b=20),
+                   legend=dict(orientation="h"))
+
+contributions_10m = data[(data['Montant UE programmé'] > 10000000) & (data['Instrument financier ?'] == False)].groupby(by='themeprojet')
+fig8 = go.Figure(data=[go.Scatter(
+    x = (contributions_10m['Montant UE programmé'].sum() / contributions_10m['Montant UE programmé'].count()),
+    y = contributions_10m['Montant UE programmé'].count(),
+    text = list(contributions_10m.indices.keys()),
+    marker_size = contributions_10m['Total des dépenses éligibles'].sum()
+)])
+sizeref = 2.*max(contributions_10m['Total des dépenses éligibles'].sum())/(100**2)
+fig8.update_traces(mode='markers', marker=dict(sizemode='area',
+                                               sizeref=sizeref, line_width=2))
+fig8.update_layout(margin=dict(t=20, b=20),
+                   xaxis=dict(title='Contribution UE par opération'),
+                   yaxis=dict(title='Nombre d’opérations'))
+
+inst_financiers = data.loc[data['Instrument financier ?'] == True, ["Catégorie d'instrument financier", 'Montant UE programmé']].groupby(by="Catégorie d'instrument financier").sum()
+fig9 = go.Figure(data=[go.Pie(labels=inst_financiers.index, values=inst_financiers['Montant UE programmé'], hole=0.6, hoverinfo = "none")])
+fig9.update_traces(texttemplate='%{percent:.0%f}')
+fig9.update_layout(margin=dict(t=20),
+                   legend=dict(orientation="h", itemclick=False, itemdoubleclick=False, yanchor="bottom"))
 
 categories_duree = ["moins d'un an", "entre un et deux ans", "entre deux et trois ans", "plus de trois ans"]
 palette_bleus = ['blue', 'cornflowerblue', 'SkyBlue', 'LightSteelBlue']
@@ -345,7 +386,7 @@ app.layout = html.Div(children=[
             figure=fig1,
             config={'displayModeBar': False}
         )], className="one-half column"),
-        html.Div([dcc.Markdown(children=partie2_md_b)], className="twelve columns"),
+        html.Div([dcc.Markdown(children=partie2_md_b)], className="twelve columns")
     ], className="row"),
 
     html.Div([
@@ -402,12 +443,27 @@ app.layout = html.Div(children=[
 
     html.Div([
         html.Div([dcc.Markdown(children=partie5_md_focus_assos)], className="five columns"),
-        html.Div([dcc.Markdown(children=partie5_md_focus_entreprises)], className="seven columns")
+        html.Div([dcc.Markdown(children=partie5_md_focus_entreprises),
+                  dcc.Graph(
+                            id='focus_entreprises',
+                            figure=fig5_entreprises,
+                            config={'displayModeBar': False},
+                            style={'height':200}
+                )       
+        ], className="seven columns")
     ], className="row"),
 
     html.Div([
         dcc.Markdown(children=partie6_md)
     ], className="paragraph"),
+
+    html.Figure([
+        html.Figcaption('Bénéficiaires FEDER et FSE par catégorie de région'),
+        dcc.Graph(
+            id='beneficiaires_catregion',
+            figure=fig6,
+            config={'displayModeBar': False})
+    ]),
 
     html.Div([
         dcc.Markdown(children=partie7_md)
@@ -417,9 +473,24 @@ app.layout = html.Div(children=[
         dcc.Markdown(children=partie8_md)
     ], className="paragraph"),
 
+    html.Figure([
+        html.Figcaption('Contributions FEDER supérieures à 10 millions d’euros, hors instruments financiers'),
+        dcc.Graph(
+            id='contributions_10m',
+            figure=fig8,
+            config={'displayModeBar': False})
+    ]),
+
     html.Div([
-        dcc.Markdown(children=partie9_md)
-    ], className="paragraph"),
+        html.Div([dcc.Markdown(children=partie9_md)], className="one-half column"),
+        html.Div([
+            dcc.Graph(
+                      id='instruments_financiers',
+                      figure=fig9,
+                      config={'displayModeBar': False}
+                )
+        ], className="one-half column")
+    ], className="row"),
 
     html.Div([
         dcc.Markdown(children=partie10_md)
