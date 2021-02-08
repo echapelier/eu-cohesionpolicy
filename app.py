@@ -187,9 +187,7 @@ partie11_md = '''
     L’approche agrégée des bénéficiaires et allocations du FEDER et du FSE suggère que la mobilisation des fonds européens en France donne lieu à deux réalités. D’une part, une très large majorité d’opérations ayant recours à des instruments d’une relative complexité mais représentant moins d’un tiers des ressources engagées. D’autre part des opérations de grande échelle où les acteurs publics jouent un rôle prépondérant. Cette double réalité interroge plusieurs dimensions de la mise en œuvre des fonds européens :
 
     - **Identification claire des bénéficiaires** – l’évaluation des programmes européens, instruments de politique socioéconomique, pourrait être enrichie d’une analyse approfondie des catégories de bénéficiaires directs et indirects des financements, essentielle à l’appréhension de la pertinence, cohérence, effectivité, efficacité et efficience de l’action publique ;
-
     - **Distribution des montants et distribution du risque d’erreur** – les débats sur la simplification des fonds européens pourraient davantage intégrer la question de la distribution du risque de manquement à la légalité et à la régularité de l’utilisation des fonds, en fonction des types d’opérations et des montants engagés, permettant ainsi de développer des procédures d’attribution, de gestion et de contrôle basées sur l’estimation quantifiée de ce risque ;
-
     - **Valeur ajoutée européenne** – la prise en compte systématique des domaines d’intervention tels que définis par l’Annexe I du Règlement portant dispositions communes permettrait de mieux rendre compte de la relation entre types d’opérations cofinancées, performance des programmes et impact socioéconomique des fonds européens.
 '''
 
@@ -197,8 +195,6 @@ partie12_md = '''
     ## 12. Note méthodologique
 
     L’analyse repose sur les données relatives à 38 532 opérations menées dans le cadre de 38 Programmes opérationnels FEDER, FSE et IEJ 2014-2020. Elles ont été extraites le 01/12/2020 et sont issues des listes d’opérations programmées publiées au 29/07/2020 par l’Agence nationale de la cohésion des territoires (16 411 opérations), au 01/12/2020 par la Région Nouvelle-Aquitaine (2 292 opérations), au 06/07/2020 par la Région Normandie (864 opérations), au 30/06/2020 par la Région Bretagne (529 opérations) et au 30/07/2020 par la Délégation générale à l’emploi et à la formation professionnelle (18 436 opérations). Ne sont donc pas incluses les opérations cofinancées au titre des programmes de coopération territoriale européenne (INTERREG). Les montants considérés représentent 83,2 % des fonds FEDER et FSE-IEJ alloués à la France pour 2014-2020, la période de programmation n’étant pas clôturée à la date de l’analyse et les jeux de données publiés d’ayant donc pas un caractère définitif.
-
-    Auteurs : [Elie HERBERICHS](mailto:eherberichs@novi-advisory.eu) et [Romain SU](https://romain.su) 
 '''
 
 lignes_feder = np.arange(1, data.loc[data['Fonds'] == 'FEDER', 'Montant UE programmé'].count())
@@ -330,9 +326,10 @@ fig5_entreprises = go.Figure(data=[go.Pie(labels=types_invest_entreprises, value
 fig5_entreprises.update_traces(texttemplate='%{percent:.0%f}')
 fig5_entreprises.update_layout(title_text='Répartition des cofinancements FEDER pour l’investissement des entreprises',
                                margin=dict(l=0, r=0, t=20, b=60),
-                               legend=dict(itemclick=False, itemdoubleclick=False, yanchor='middle', y=0.5),
+                               legend=dict(itemclick=False, itemdoubleclick=False, yanchor='middle', y=0.5, x=0.75),
                                title_font_size=12,
-                               title_y=0.1
+                               title_y=0.05,
+                               title_x=0.42
                                )
 
 fig6 = go.Figure()
@@ -347,7 +344,8 @@ fig6.add_trace(go.Bar(y=['Régions moins développées', 'Régions en transition
 fig6.update_layout(barmode='stack',
                    xaxis = dict(ticksuffix=' %'),
                    margin=dict(t=20, b=20),
-                   legend=dict(orientation="h"))
+                   legend=dict(orientation="h"),
+                   dragmode=False)
 
 contributions_10m = data[(data['Montant UE programmé'] > 10000000) & (data['Instrument financier ?'] == False)].groupby(by='themeprojet')
 fig8 = go.Figure(data=[go.Scatter(
@@ -363,7 +361,8 @@ fig8.update_traces(mode='markers',
                    hoverinfo='text')
 fig8.update_layout(margin=dict(t=20, b=20),
                    xaxis=dict(title='Contribution UE par opération'),
-                   yaxis=dict(title='Nombre d’opérations'))
+                   yaxis=dict(title='Nombre d’opérations'),
+                   dragmode=False)
 
 inst_financiers = data.loc[data['Instrument financier ?'] == True, ["Catégorie d'instrument financier", 'Montant UE programmé']].groupby(by="Catégorie d'instrument financier").sum()
 fig9 = go.Figure(data=[go.Pie(labels=inst_financiers.index, values=inst_financiers['Montant UE programmé'], hole=0.6, hoverinfo = "none")])
@@ -379,12 +378,27 @@ data_montants_mois = pd.read_csv('data_montants_mois.csv')
 fig10a = go.Figure()
 fig10a.add_trace(go.Scatter(x=data_montants_mois.iloc[:,0], y=(data_montants_mois['FEDER_normalise'] * 100), mode='lines', name='FEDER', hoverinfo='none', line=dict(color="#0f4f75")))
 fig10a.add_trace(go.Scatter(x=data_montants_mois.iloc[:,0], y=(data_montants_mois['FSE_normalise'] * 100), mode='lines', name='FSE', hoverinfo='none', line=dict(color="#00b1f3")))
-fig10a.update_layout(yaxis = dict(ticksuffix=' %'),
-                     margin=dict(t=10, b=0),
-                     legend=dict(xanchor="right", x=1, yanchor="bottom", y=0))
+fig10a.update_layout(margin=dict(t=10, b=10),
+                     legend=dict(xanchor="right", x=1, yanchor="bottom", y=0),
+                     dragmode=False)
 
-categories_duree = ["moins d'un an", "entre un et deux ans", "entre deux et trois ans", "plus de trois ans"]
+data_lancement = pd.DataFrame(data = {'annee_lancement': (data.loc[((data["Date de début de l'opération"] >= pd.Timestamp('2014-01-01')) & (data["Date de début de l'opération"] <= pd.Timestamp('2020-12-31'))), "Date de début de l'opération"].dt.year), 'duree': data['Durée, en mois']})
+duree_bins = [0, 12, 24, 36, 200]
+data_lancement_synthese = data_lancement.groupby(['annee_lancement', pd.cut(data_lancement['duree'], duree_bins)])
+
+annees = [2014, 2015, 2016, 2017, 2018, 2019, 2020]
+categories_duree = ['moins d’un an', 'entre un et deux ans', 'entre deux et trois ans', 'plus de trois ans']
 palette_bleus = ['blue', 'cornflowerblue', 'SkyBlue', 'LightSteelBlue']
+
+fig10b = go.Figure()
+fig10b.add_trace(go.Bar(x=data_lancement.groupby('annee_lancement').count().index, y=data_lancement.groupby('annee_lancement').count()['duree'], name='Démarrages', hoverinfo='none', marker_color='#d4d4d7'))
+fig10b.add_trace(go.Scatter(x=annees, y=[616, 3488, 3975, 4246, 3313, 2674, 761], mode='lines', name=categories_duree[0], hoverinfo='none', line=dict(color=palette_bleus[0])))
+fig10b.add_trace(go.Scatter(x=annees, y=[826, 2817, 3907, 3870, 3188, 2853, 1703], mode='lines', name=categories_duree[1], hoverinfo='none', line=dict(color=palette_bleus[1])))
+fig10b.add_trace(go.Scatter(x=annees, y=[584, 2300, 3575, 4462, 5087, 4197, 2944], mode='lines', name=categories_duree[2], hoverinfo='none', line=dict(color=palette_bleus[2])))
+fig10b.add_trace(go.Scatter(x=annees, y=[678, 1994, 2967, 3752, 4003, 3401, 2505], mode='lines', name=categories_duree[3], hoverinfo='none', line=dict(color=palette_bleus[3])))
+fig10b.update_layout(margin=dict(t=10, b=90),
+                     dragmode=False,
+                     legend=dict(orientation="h", yanchor="bottom", y=-0.2, xanchor="center", x=0.5))
 
 fig10c = go.Figure(go.Treemap(
     labels = categories_duree,
@@ -396,7 +410,7 @@ fig10c = go.Figure(go.Treemap(
     hoverinfo = "none",
     marker_colors = palette_bleus
     ),
-                 layout=dict(font=graph_fontstyle, margin=dict(l=0, r=0, t=20, b=20))
+                 layout=dict(font=graph_fontstyle, margin=dict(l=0, r=0, t=0, b=20))
     )
 
 fig10d = go.Figure(go.Treemap(
@@ -409,10 +423,13 @@ fig10d = go.Figure(go.Treemap(
     hoverinfo = "none",
     marker_colors = palette_bleus
     ),
-                 layout=dict(font=graph_fontstyle, margin=dict(l=0, r=0, t=20, b=20))
+                 layout=dict(font=graph_fontstyle, margin=dict(l=0, r=0, t=0, b=20))
     )
 
 app.layout = html.Div(children=[
+    
+    html.Div(children=[
+    
     html.H1(['Comment sont utilisés les fonds européens en France ?', html.Br(), 'Analyse des projets FEDER et FSE de la période 2014-2020']),
 
     html.Div([
@@ -484,15 +501,15 @@ app.layout = html.Div(children=[
     ]),
 
     html.Div([
-        html.Div([dcc.Markdown(children=partie5_md_focus_assos)], className="five columns"),
+#        html.Div([dcc.Markdown(children=partie5_md_focus_assos)], className="five columns"),
         html.Div([dcc.Markdown(children=partie5_md_focus_entreprises),
                   dcc.Graph(
                             id='focus_entreprises',
                             figure=fig5_entreprises,
                             config={'displayModeBar': False},
-                            style={'height':280}
+                            style={'height':340}
                 )       
-        ], className="seven columns")
+        ], className="ten columns offset-by-one")
     ], className="row"),
 
     html.Div([
@@ -509,7 +526,7 @@ app.layout = html.Div(children=[
 
     html.Div([
         dcc.Markdown(children=partie6_md_note)
-    ], id="note1", className="paragraph"),
+    ], id="note1", className="paragraph footnote"),
 
     html.Div([
         dcc.Markdown(children=partie7_md)
@@ -554,7 +571,7 @@ app.layout = html.Div(children=[
 
     html.Div([
         dcc.Markdown(children=partie7_md_note)
-    ], id="note2", className="paragraph"),
+    ], id="note2", className="paragraph footnote"),
 
     html.Div([
         dcc.Markdown(children=partie8_md)
@@ -585,13 +602,24 @@ app.layout = html.Div(children=[
     ], id="renvoi_partie10", className="paragraph"),
 
     html.Figure([
-        html.Figcaption('Mise en œuvre des opérations mesurée par montants programmés de fonds européens'),
+        html.Figcaption(['Mise en œuvre des opérations mesurée par montants programmés de fonds européens', html.Br(), '(100 = rythme maximum observé sur l’ensemble de la période)']),
         dcc.Graph(
             id='montants_op_mois',
             figure=fig10a,
             config={'displayModeBar': False}
         )
     ]),
+
+    html.Figure([
+        html.Figcaption(['Nombre de démarrages d’opérations FEDER et FSE par année', html.Br(), 'et nombre d’opérations en cours de réalisation chaque année en fonction de leur durée']),
+        dcc.Graph(
+            id='lancement_op_annees',
+            figure=fig10b,
+            config={'displayModeBar': False}
+        )
+    ]),
+
+    html.P(['Distribution des projets en fonction de la durée des opérations'], className="figcap"),
 
     html.Div([
 #        html.Figure([
@@ -612,7 +640,7 @@ app.layout = html.Div(children=[
 
     html.Div([
         dcc.Markdown(children=partie10_md_note)
-    ], id="note3", className="paragraph"),
+    ], id="note3", className="paragraph footnote"),
 
     html.Div([
         dcc.Markdown(children=partie11_md)
@@ -622,9 +650,20 @@ app.layout = html.Div(children=[
         dcc.Markdown(children=partie12_md)
     ], className="paragraph"),
 
+    html.Div([
+        html.P([html.Span(['Auteurs : '], style={'font-weight': 'bold'}), html.A(['Elie Herberichs'], href="mailto:eherberichs@novi-advisory.eu"), ' et ', html.A(['Romain Su'], href="https://romain.su")], style={'text-align': 'right', 'margin': '20px 50px 20px', 'font-size': '1.2em'})
+    ])
+
 ],
     className="container"
-)
+),
+
+html.Div([
+    html.A(children=[
+        html.Img(src="https://novi-advisory.eu/wp-content/uploads/2019/05/logo-footer.png")], href="https://novi-advisory.eu")
+], className="footer")
+
+])
 
 if __name__ == '__main__':
     app.run_server(debug=True)
