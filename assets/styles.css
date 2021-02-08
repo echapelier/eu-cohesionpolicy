@@ -143,9 +143,19 @@ body {
   margin-top: 0;
   margin-bottom: 0;}
 
+.footer {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
 .paragraph {
   margin-left: 2rem;
   margin-right: 3.5rem;
+}
+
+.footnote {
+  font-size: 0.85em;
 }
 
 /* Typography
@@ -164,6 +174,12 @@ p {
   margin-top: 0; }
 
 figcaption {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.figcap {
   text-align: center;
   font-weight: bold;
   font-size: 1.1em;
