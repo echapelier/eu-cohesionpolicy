@@ -53,7 +53,7 @@ couleurs_catbeneficiaires = ['#aa8f00', 'LightSteelBlue', '#802200', '#3455db', 
 partie1_md = '''
     ## 1. Introduction
 
-    L’ouverture de la nouvelle période de programmation des fonds européens 2021-2027 est un moment propice au bilan de la précédente période 2014-2020, et notamment de l’emploi des deux instruments de financement de la politique régionale de l’Union européenne que constituent le Fonds européen de développement régional (FEDER) et le Fonds social européen (FSE).
+    L’ouverture de la nouvelle période de programmation des fonds européens 2021-2027 est un moment propice au bilan de la précédente période 2014-2020. Au cours de cette période, deux fonds ont joué un rôle particulièrement important en matière de politique régionale de l’Union européenne : le Fonds européen de développement régional (FEDER) et le Fonds social européen (FSE).
 
     Cette politique régionale vise à accroître la cohésion économique, sociale et territoriale entre régions européennes – c’est pourquoi elle est aussi appelée politique de cohésion – et à réduire leurs écarts de développement. Elle se décline en programmes opérationnels régionaux, interrégionaux et nationaux articulés autour de priorités d’investissement définies sur sept ans pour chaque territoire. Ces priorités se répartissent selon des axes thématiques et elles définissent les conditions d’éligibilité des opérations.
 
@@ -63,7 +63,7 @@ partie1_md = '''
     - Observe-t-on des différences entre régions dans la mise en œuvre des fonds ?
     - Comment s’articulent le cycle de programmation de sept ans et le calendrier de réalisation des opérations ?
     
-    En procédant à l’analyse de données agrégées plutôt que par programme et par axe thématique, cette rétrospective offre aux gestionnaires, bénéficiaires et praticiens des fonds européens un éclairage renouvelé sur l’utilisation du FEDER et du FSE en France.
+    En procédant à l’analyse de données agrégées plutôt que par programme et par axe thématique, cette rétrospective propose aux gestionnaires, bénéficiaires et praticiens des fonds européens un éclairage renouvelé sur l’utilisation du FEDER et du FSE en France.
 '''
 
 partie2_md_a = '''
@@ -124,11 +124,11 @@ partie5_md_focus_entreprises = '''
 partie6_md = '''
     ## 6. Quelles particularités outre-mer ?
 
-    **Selon qu’elles soient conduites outre-mer ou en métropole, les actions de renforcement de la cohésion économique, sociale et territoriale soutenues par le FEDER et le FSE présentent des différences qui se traduisent notamment par le cofinancement d’acteurs différents.**
+    **Selon qu’elles sont conduites outre-mer ou en métropole, les actions de renforcement de la cohésion économique, sociale et territoriale soutenues par le FEDER et le FSE présentent des différences qui se traduisent notamment par le cofinancement d’acteurs différents.**
 
     Dans les cinq régions et départements d’outre-mer, régions dites « moins développées » [[1]](#note1), l’État et les établissements publics portent une part significative des cofinancements européens (respectivement 8 et 10 %, contre 0 et 3 % en métropole). Dans le cas de l’État, il s’agit d’une part des mesures d’assistance technique à la gestion des fonds européens, et de l’autre des actions relatives au Service militaire adapté (SMA), un dispositif d’insertion destiné aux jeunes. De leur côté, les établissements publics mettent en œuvre des mesures relatives à l’emploi et à l’inclusion de plus grande ampleur qu’en métropole, ainsi que d’importantes opérations d’aménagement concernant notamment les infrastructures portuaires et le logement.
     
-    Les entreprises en outre-mer bénéficient également de davantage de financements européens, en raison de l’existence de mesures de compensation des surcoûts de l’ultrapériphéricité. En revanche, les conseils régionaux et établissements d’enseignement supérieur et de recherche occupent une place moindre que dans les régions métropolitaines dites « en transition » et « plus développées ».
+    Les entreprises en outre-mer bénéficient également de davantage de financements européens, en raison de l’existence de mesures de compensation des surcoûts de l’ultrapériphéricité. En revanche, les conseils régionaux et établissements d’enseignement supérieur et de recherche y occupent une place moindre que dans les régions métropolitaines dites « en transition » et « plus développées ».
 '''
 
 partie6_md_note = '''
@@ -162,7 +162,7 @@ partie8_md = '''
 partie9_md = '''
     ## 9. Les instruments financiers
 
-    **Une partie des financements FEDER ont été alloués à la mise en place d’une soixantaine d’instruments financiers, c’est-à-dire des dispositifs d’aides remboursables représentant un total de plus de 354 millions d’euros.**
+    **Une partie des financements FEDER a été allouée à la mise en place d’une soixantaine d’instruments financiers, c’est-à-dire des dispositifs d’aides remboursables représentant un total de plus de 354 millions d’euros.**
 
     Ces instruments sont principalement à destination des PME, et notamment des entreprises en création et/ou innovantes. Ils comprennent des instruments de participation (intervention en fonds propres et quasi-fonds propres), de prêt et de garantie, ainsi que des dotations à des fonds de fonds permettant d’abonder plusieurs instruments financiers. Ils sont essentiellement gérés par les Conseils régionaux (73 %) et BPI France (18 %).
 '''
@@ -174,7 +174,7 @@ partie10_md = '''
 
     Cependant, les opérations FEDER et FSE ont suivi deux tendances distinctes : après une brusque augmentation des contributions européennes en 2015, le FSE a conservé de 2016 à 2019 un rythme stable de réalisation des opérations [[3]](#note3) ; la réalisation des opérations FEDER a quant à elle connu une croissance sensible et régulière jusqu’en 2017, avant de se stabiliser en 2018 et 2019.
     
-    Plus de la moitié (55 %) des opérations FEDER et FSE ont démarré avant la fin 2016 et 89 % avant la fin 2018, avec un pic de mise en œuvre en 2017. Ce pic a été suivi d’un rapide recul de la mise en œuvre des opérations de courte durée, en majorité cofinancées par le FSE (dès 2016 pour les opérations de moins de 24 mois et à partir de 2017 pour les opérations de moins de 12 mois).
+    Près de la moitié (49 %) des opérations FEDER et FSE ont démarré avant la fin 2016 et 86 % avant la fin 2018, avec un pic de mise en œuvre en 2017. Ce pic a été suivi d’un rapide recul de la mise en œuvre des opérations de courte durée, en majorité cofinancées par le FSE (dès 2016 pour les opérations de moins de 24 mois et à partir de 2017 pour les opérations de moins de 12 mois).
 '''
 
 partie10_md_note = '''
@@ -184,7 +184,7 @@ partie10_md_note = '''
 partie11_md = '''
     ## 11. Perspectives
 
-    L’approche agrégée des bénéficiaires et allocations du FEDER et du FSE suggère que la mobilisation des fonds européens en France donne lieu à deux réalités. D’une part, une très large majorité d’opérations ayant recours à des instruments d’une relative complexité mais représentant moins d’un tiers des ressources engagées. D’autre part des opérations de grande échelle où les acteurs publics jouent un rôle prépondérant. Cette double réalité interroge plusieurs dimensions de la mise en œuvre des fonds européens :
+    L’approche agrégée des bénéficiaires et allocations du FEDER et du FSE suggère que la mobilisation des fonds européens en France donne lieu à deux réalités. D’une part, ces dispositifs de financement d’une relative complexité ont été utilisés pour une très large majorité d’opérations ayant représenté moins d’un tiers des fonds programmés. D’autre part, ont été mises en place avec le FEDER et le FSE des opérations de grande échelle où les acteurs publics jouent un rôle prépondérant. Cette double réalité interroge plusieurs dimensions de la mise en œuvre des fonds européens :
 
     - **Identification claire des bénéficiaires** – l’évaluation des programmes européens, instruments de politique socioéconomique, pourrait être enrichie d’une analyse approfondie des catégories de bénéficiaires directs et indirects des financements, essentielle à l’appréhension de la pertinence, cohérence, effectivité, efficacité et efficience de l’action publique ;
     - **Distribution des montants et distribution du risque d’erreur** – les débats sur la simplification des fonds européens pourraient davantage intégrer la question de la distribution du risque de manquement à la légalité et à la régularité de l’utilisation des fonds, en fonction des types d’opérations et des montants engagés, permettant ainsi de développer des procédures d’attribution, de gestion et de contrôle basées sur l’estimation quantifiée de ce risque ;
@@ -195,6 +195,8 @@ partie12_md = '''
     ## 12. Note méthodologique
 
     L’analyse repose sur les données relatives à 38 532 opérations menées dans le cadre de 38 Programmes opérationnels FEDER, FSE et IEJ 2014-2020. Elles ont été extraites le 01/12/2020 et sont issues des listes d’opérations programmées publiées au 29/07/2020 par l’Agence nationale de la cohésion des territoires (16 411 opérations), au 01/12/2020 par la Région Nouvelle-Aquitaine (2 292 opérations), au 06/07/2020 par la Région Normandie (864 opérations), au 30/06/2020 par la Région Bretagne (529 opérations) et au 30/07/2020 par la Délégation générale à l’emploi et à la formation professionnelle (18 436 opérations). Ne sont donc pas incluses les opérations cofinancées au titre des programmes de coopération territoriale européenne (INTERREG). Les montants considérés représentent 83,2 % des fonds FEDER et FSE-IEJ alloués à la France pour 2014-2020, la période de programmation n’étant pas clôturée à la date de l’analyse et les jeux de données publiés d’ayant donc pas un caractère définitif.
+
+    Une version PDF de ce document peut être téléchargée en cliquant ici.
 '''
 
 lignes_feder = np.arange(1, data.loc[data['Fonds'] == 'FEDER', 'Montant UE programmé'].count())
@@ -537,7 +539,7 @@ app.layout = html.Div(children=[
             html.Table([
                 html.Thead([
                     html.Tr([
-                        html.Th('Indice de concentration IHH par région (pré-NOTRe)', colSpan=2, style={'text-align':'center'})
+                        html.Th('Indice de concentration IHH par région', colSpan=2, style={'text-align':'center'})
                     ])
                 ]),
                 html.Tbody([
