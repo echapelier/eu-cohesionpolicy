@@ -14,6 +14,7 @@ graph_fontstyle = dict(family="Arial, sans-serif",
                         size=14)
 
 app = dash.Dash(__name__)
+app.title = 'Analyse de l’utilisation des fonds européens en France'
 
 server = app.server
 
