@@ -196,7 +196,7 @@ partie12_md = '''
 
     L’analyse repose sur les données relatives à 38 532 opérations menées dans le cadre de 38 Programmes opérationnels FEDER, FSE et IEJ 2014-2020. Elles ont été extraites le 01/12/2020 et sont issues des listes d’opérations programmées publiées au 29/07/2020 par l’Agence nationale de la cohésion des territoires (16 411 opérations), au 01/12/2020 par la Région Nouvelle-Aquitaine (2 292 opérations), au 06/07/2020 par la Région Normandie (864 opérations), au 30/06/2020 par la Région Bretagne (529 opérations) et au 30/07/2020 par la Délégation générale à l’emploi et à la formation professionnelle (18 436 opérations). Ne sont donc pas incluses les opérations cofinancées au titre des programmes de coopération territoriale européenne (INTERREG). Les montants considérés représentent 83,2 % des fonds FEDER et FSE-IEJ alloués à la France pour 2014-2020, la période de programmation n’étant pas clôturée à la date de l’analyse et les jeux de données publiés d’ayant donc pas un caractère définitif.
 
-    Une version PDF de ce document peut être téléchargée en cliquant ici.
+    Une version PDF de ce document peut être téléchargée en cliquant [ici](https://novi-advisory.eu/wp-content/uploads/2021/03/analyse-projets-feder-fse-2014-2020.pdf).
 '''
 
 lignes_feder = np.arange(1, data.loc[data['Fonds'] == 'FEDER', 'Montant UE programmé'].count())
@@ -455,7 +455,7 @@ app.layout = html.Div(children=[
     ], className="paragraph"),
 
     html.Figure([
-        html.Figcaption('Apport en fonds européens des catégories de bénéficiaires aux différentes thématiques'),
+        html.Figcaption('Financement FEDER et FSE par catégorie de bénéficiaire et par thématique'),
         dcc.Graph(
             id='apport_beneficiaires_thematiques',
             figure=fig2,
