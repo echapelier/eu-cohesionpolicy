@@ -100,7 +100,7 @@ partie4_md = '''
 partie5_md = '''
     ## 5. État et collectivités territoriales : des actions complémentaires ?
 
-    **La nature des interventions des collectivités territoriales et de l’État, qui représentant 41 % des montants programmés, suggère une complémentarité entre leurs actions. Cette complémentarité est d’ordre géographique pour les actions de formation mobilisant le FSE, entre mise en œuvre nationale, régionale ou infrarégionale, et thématique dans le cadre du FEDER.**
+    **La nature des interventions des collectivités territoriales et de l’État, qui représentent 41 % des montants programmés, suggère une complémentarité entre leurs actions. Cette complémentarité est d’ordre géographique pour les actions de formation mobilisant le FSE, entre mise en œuvre nationale, régionale ou infrarégionale, et thématique dans le cadre du FEDER.**
 
     Le financement de la formation apparaît comme une priorité centrale des régions et de l’État, principales autorités de gestion des programmes opérationnels. Les régions mettent ainsi très largement en œuvre les opérations FSE dans ce domaine, essentiellement au titre des mesures liées à l'apprentissage tout au long de la vie prévues par les programmes opérationnels régionaux.
 
